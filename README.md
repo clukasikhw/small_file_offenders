@@ -15,5 +15,7 @@ the NameNode Java process will be required as the files system
 
 # How to use this script
 Before beginning, process the image file into TSV format, as shown in this example command:
+
 hadoop oiv -i /hadoop/hdfs/namesecondary/current/fsimage_0000000000003951761 -o fsimage-delimited.tsv -p Delimited
+
 then pipe the output file (fsimage-delimited.tsv) into this program, eg. cat fsimage-delimited.tsv | fsimage_users.pl
