@@ -5,13 +5,13 @@ Because HDP 2.5 has a Zeppelin notebook that will help you identify
 what users are contributing to small file volume. This is part of [SmartSense](https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.4.0/index.html).
  Read more 
 [here] (https://docs.hortonworks.com/HDPDocuments/SS1/SmartSense-1.3.0/bk_installation/content/activity_analysis.html) on that. 
-If you are on an older HDP version, you 
+If you are on an older HDP version, you can take a look at this script.. 
 
 # Why Worry About Small Files?
 The HDFS NameNode architecture, explained [here](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html) mentions that 
 "the NameNode keeps an image of the entire file system namespace and file Blockmap in memory." What this means is that 
 every file in HDFS adds some pressure to the memory capacity for the NameNode process. Therefore, a larger max heap for 
-the NameNode Java process will be required as the files system
+the NameNode Java process will be required as the files system grows.
 
 # How to use this script
 Before beginning, process the image file into TSV format, as shown in this example command:
